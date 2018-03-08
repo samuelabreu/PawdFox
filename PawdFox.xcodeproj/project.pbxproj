@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		800EC6842006AB0400705AE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800EC6832006AB0400705AE2 /* AppDelegate.swift */; };
+		800EC6862006AB0400705AE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800EC6852006AB0400705AE2 /* ViewController.swift */; };
+		800EC6882006AB0400705AE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 800EC6872006AB0400705AE2 /* Assets.xcassets */; };
+		800EC68B2006AB0400705AE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800EC6892006AB0400705AE2 /* Main.storyboard */; };
+		800EC6A22007A4ED00705AE2 /* wrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 800EC6A12007A4ED00705AE2 /* wrapper.mm */; };
+		802316AB200FD917007F2814 /* libplc4.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 802316A8200FD916007F2814 /* libplc4.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		802316AC200FD917007F2814 /* libplds4.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 802316A9200FD916007F2814 /* libplds4.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		802316AD200FD917007F2814 /* libnspr4.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 802316AA200FD916007F2814 /* libnspr4.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		80D420BD200FC8CC00518877 /* libsoftokn3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D420B3200FC8CB00518877 /* libsoftokn3.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
+		80D420BE200FC8CC00518877 /* libnssdbm3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D420B4200FC8CB00518877 /* libnssdbm3.dylib */; };
+		80D420BF200FC8CC00518877 /* libgtestutil.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D420B5200FC8CB00518877 /* libgtestutil.dylib */; };
+		80D420C0200FC8CC00518877 /* libnssutil3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D420B6200FC8CB00518877 /* libnssutil3.dylib */; };
+		80D420C1200FC8CC00518877 /* libgtest1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D420B7200FC8CC00518877 /* libgtest1.dylib */; };
+		80D420C2200FC8CC00518877 /* libnss3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D420B8200FC8CC00518877 /* libnss3.dylib */; };
+		80D420C3200FC8CC00518877 /* libssl3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D420B9200FC8CC00518877 /* libssl3.dylib */; };
+		80D420C4200FC8CC00518877 /* libnssckbi.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D420BA200FC8CC00518877 /* libnssckbi.dylib */; };
+		80D420C5200FC8CC00518877 /* libfreebl3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D420BB200FC8CC00518877 /* libfreebl3.dylib */; };
+		80D420C6200FC8CC00518877 /* libsmime3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D420BC200FC8CC00518877 /* libsmime3.dylib */; };
+		80D420C8200FCA7D00518877 /* libfreebl3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 80D420BB200FC8CC00518877 /* libfreebl3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		80D420C9200FCA7D00518877 /* libgtest1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 80D420B7200FC8CC00518877 /* libgtest1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		80D420CA200FCA7D00518877 /* libgtestutil.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 80D420B5200FC8CB00518877 /* libgtestutil.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		80D420CB200FCA7D00518877 /* libnss3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 80D420B8200FC8CC00518877 /* libnss3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		80D420CC200FCA7D00518877 /* libnssckbi.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 80D420BA200FC8CC00518877 /* libnssckbi.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		80D420CD200FCA7D00518877 /* libnssdbm3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 80D420B4200FC8CB00518877 /* libnssdbm3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		80D420CE200FCA7D00518877 /* libnssutil3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 80D420B6200FC8CB00518877 /* libnssutil3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		80D420CF200FCA7D00518877 /* libsmime3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 80D420BC200FC8CC00518877 /* libsmime3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		80D420D0200FCA7D00518877 /* libsoftokn3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 80D420B3200FC8CB00518877 /* libsoftokn3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		80D420D1200FCA7D00518877 /* libssl3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 80D420B9200FC8CC00518877 /* libssl3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		80D420C7200FCA6B00518877 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				802316AB200FD917007F2814 /* libplc4.dylib in CopyFiles */,
+				802316AC200FD917007F2814 /* libplds4.dylib in CopyFiles */,
+				802316AD200FD917007F2814 /* libnspr4.dylib in CopyFiles */,
+				80D420C8200FCA7D00518877 /* libfreebl3.dylib in CopyFiles */,
+				80D420C9200FCA7D00518877 /* libgtest1.dylib in CopyFiles */,
+				80D420CA200FCA7D00518877 /* libgtestutil.dylib in CopyFiles */,
+				80D420CB200FCA7D00518877 /* libnss3.dylib in CopyFiles */,
+				80D420CC200FCA7D00518877 /* libnssckbi.dylib in CopyFiles */,
+				80D420CD200FCA7D00518877 /* libnssdbm3.dylib in CopyFiles */,
+				80D420CE200FCA7D00518877 /* libnssutil3.dylib in CopyFiles */,
+				80D420CF200FCA7D00518877 /* libsmime3.dylib in CopyFiles */,
+				80D420D0200FCA7D00518877 /* libsoftokn3.dylib in CopyFiles */,
+				80D420D1200FCA7D00518877 /* libssl3.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		800EC6802006AB0400705AE2 /* PawdFox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PawdFox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		800EC6832006AB0400705AE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		800EC6852006AB0400705AE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		800EC6872006AB0400705AE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		800EC68A2006AB0400705AE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		800EC68C2006AB0400705AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		800EC68D2006AB0400705AE2 /* PawdFox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PawdFox.entitlements; sourceTree = "<group>"; };
+		800EC6962007967900705AE2 /* PawdFox-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PawdFox-Bridging-Header.h"; sourceTree = "<group>"; };
+		800EC69D2007A43400705AE2 /* libpawdfox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libpawdfox.h; path = ../../libpawdfox/src/libpawdfox.h; sourceTree = "<group>"; };
+		800EC6A02007A49E00705AE2 /* wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wrapper.h; sourceTree = "<group>"; };
+		800EC6A12007A4ED00705AE2 /* wrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = wrapper.mm; sourceTree = "<group>"; };
+		802316A8200FD916007F2814 /* libplc4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libplc4.dylib; sourceTree = "<group>"; };
+		802316A9200FD916007F2814 /* libplds4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libplds4.dylib; sourceTree = "<group>"; };
+		802316AA200FD916007F2814 /* libnspr4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libnspr4.dylib; sourceTree = "<group>"; };
+		80D420B3200FC8CB00518877 /* libsoftokn3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libsoftokn3.dylib; sourceTree = "<group>"; };
+		80D420B4200FC8CB00518877 /* libnssdbm3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libnssdbm3.dylib; sourceTree = "<group>"; };
+		80D420B5200FC8CB00518877 /* libgtestutil.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libgtestutil.dylib; sourceTree = "<group>"; };
+		80D420B6200FC8CB00518877 /* libnssutil3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libnssutil3.dylib; sourceTree = "<group>"; };
+		80D420B7200FC8CC00518877 /* libgtest1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libgtest1.dylib; sourceTree = "<group>"; };
+		80D420B8200FC8CC00518877 /* libnss3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libnss3.dylib; sourceTree = "<group>"; };
+		80D420B9200FC8CC00518877 /* libssl3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libssl3.dylib; sourceTree = "<group>"; };
+		80D420BA200FC8CC00518877 /* libnssckbi.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = libnssckbi.dylib; sourceTree = "<group>"; };
+		80D420BB200FC8CC00518877 /* libfreebl3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libfreebl3.dylib; sourceTree = "<group>"; };
+		80D420BC200FC8CC00518877 /* libsmime3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libsmime3.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		800EC67D2006AB0400705AE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80D420BD200FC8CC00518877 /* libsoftokn3.dylib in Frameworks */,
+				80D420BE200FC8CC00518877 /* libnssdbm3.dylib in Frameworks */,
+				80D420BF200FC8CC00518877 /* libgtestutil.dylib in Frameworks */,
+				80D420C0200FC8CC00518877 /* libnssutil3.dylib in Frameworks */,
+				80D420C1200FC8CC00518877 /* libgtest1.dylib in Frameworks */,
+				80D420C2200FC8CC00518877 /* libnss3.dylib in Frameworks */,
+				80D420C3200FC8CC00518877 /* libssl3.dylib in Frameworks */,
+				80D420C4200FC8CC00518877 /* libnssckbi.dylib in Frameworks */,
+				80D420C5200FC8CC00518877 /* libfreebl3.dylib in Frameworks */,
+				80D420C6200FC8CC00518877 /* libsmime3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		800EC6772006AB0300705AE2 = {
+			isa = PBXGroup;
+			children = (
+				802316AA200FD916007F2814 /* libnspr4.dylib */,
+				802316A8200FD916007F2814 /* libplc4.dylib */,
+				802316A9200FD916007F2814 /* libplds4.dylib */,
+				800EC6822006AB0400705AE2 /* PawdFox */,
+				800EC6812006AB0400705AE2 /* Products */,
+				800EC6932006ADB000705AE2 /* Frameworks */,
+				800EC6962007967900705AE2 /* PawdFox-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		800EC6812006AB0400705AE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				800EC6802006AB0400705AE2 /* PawdFox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		800EC6822006AB0400705AE2 /* PawdFox */ = {
+			isa = PBXGroup;
+			children = (
+				800EC69D2007A43400705AE2 /* libpawdfox.h */,
+				800EC6832006AB0400705AE2 /* AppDelegate.swift */,
+				800EC6852006AB0400705AE2 /* ViewController.swift */,
+				800EC6872006AB0400705AE2 /* Assets.xcassets */,
+				800EC6892006AB0400705AE2 /* Main.storyboard */,
+				800EC68C2006AB0400705AE2 /* Info.plist */,
+				800EC68D2006AB0400705AE2 /* PawdFox.entitlements */,
+				800EC6A02007A49E00705AE2 /* wrapper.h */,
+				800EC6A12007A4ED00705AE2 /* wrapper.mm */,
+			);
+			path = PawdFox;
+			sourceTree = "<group>";
+		};
+		800EC6932006ADB000705AE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80D420BB200FC8CC00518877 /* libfreebl3.dylib */,
+				80D420B7200FC8CC00518877 /* libgtest1.dylib */,
+				80D420B5200FC8CB00518877 /* libgtestutil.dylib */,
+				80D420B8200FC8CC00518877 /* libnss3.dylib */,
+				80D420BA200FC8CC00518877 /* libnssckbi.dylib */,
+				80D420B4200FC8CB00518877 /* libnssdbm3.dylib */,
+				80D420B6200FC8CB00518877 /* libnssutil3.dylib */,
+				80D420BC200FC8CC00518877 /* libsmime3.dylib */,
+				80D420B3200FC8CB00518877 /* libsoftokn3.dylib */,
+				80D420B9200FC8CC00518877 /* libssl3.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		800EC67F2006AB0400705AE2 /* PawdFox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 800EC6902006AB0400705AE2 /* Build configuration list for PBXNativeTarget "PawdFox" */;
+			buildPhases = (
+				800EC67C2006AB0400705AE2 /* Sources */,
+				800EC67D2006AB0400705AE2 /* Frameworks */,
+				800EC67E2006AB0400705AE2 /* Resources */,
+				80D420C7200FCA6B00518877 /* CopyFiles */,
+				80D420B2200FC5D800518877 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PawdFox;
+			productName = PawdFox;
+			productReference = 800EC6802006AB0400705AE2 /* PawdFox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		800EC6782006AB0300705AE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Personal Project";
+				TargetAttributes = {
+					800EC67F2006AB0400705AE2 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 800EC67B2006AB0300705AE2 /* Build configuration list for PBXProject "PawdFox" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 800EC6772006AB0300705AE2;
+			productRefGroup = 800EC6812006AB0400705AE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				800EC67F2006AB0400705AE2 /* PawdFox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		800EC67E2006AB0400705AE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				800EC6882006AB0400705AE2 /* Assets.xcassets in Resources */,
+				800EC68B2006AB0400705AE2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		80D420B2200FC5D800518877 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "fw_path=\"$TARGET_BUILD_DIR/$FRAMEWORKS_FOLDER_PATH\"\napp_dyl_list=(`ls $fw_path | grep dylib`)\n\nfunction change_paths {\n    local bin=$1\n    local dest=$2\n    if [[ -s $bin ]]; then\n    dyl_list=(`otool -L $bin | grep /usr/local/ | awk '{print $1}'`)\n    \n    for dyl in ${dyl_list[*]}; do\n    libname=$(basename $dyl)\n    libname=${libname%%.*}\n    actual_libname=(`ls $fw_path | grep $libname | xargs basename`)\n    install_name_tool -change $dyl \"$dest/$actual_libname\" $bin\n    done\n    fi\n}\n\nchange_paths $TARGET_BUILD_DIR/$TARGET_NAME.app/Contents/MacOS/$PRODUCT_NAME \"@loader_path/../Frameworks\"\nfor dyl_bin in ${app_dyl_list[*]}; do\n    change_paths $fw_path/$dyl_bin \"@loader_path/../Frameworks\"\ndone\n\n\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		800EC67C2006AB0400705AE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				800EC6862006AB0400705AE2 /* ViewController.swift in Sources */,
+				800EC6A22007A4ED00705AE2 /* wrapper.mm in Sources */,
+				800EC6842006AB0400705AE2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		800EC6892006AB0400705AE2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				800EC68A2006AB0400705AE2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		800EC68E2006AB0400705AE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBPAWDFOX_PATH = FILLTHIS;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		800EC68F2006AB0400705AE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBPAWDFOX_PATH = FILLTHIS;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		800EC6912006AB0400705AE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_MODULES_AUTOLINK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VKKMR35VV8;
+				INFOPLIST_FILE = PawdFox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/opt/nss/lib,
+					/usr/local/opt/nspr/lib,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PawdFox",
+				);
+				OTHER_CFLAGS = "-I${LIBPAWDFOX_PATH}/include";
+				OTHER_LDFLAGS = (
+					"${LIBPAWDFOX_PATH}/lib/libpawdfox.a",
+					"-lnss3",
+					"-v",
+					"-L/usr/local/opt/nspr/lib",
+					"-L/usr/local/opt/nss/lib",
+					"-lc++",
+					"-headerpad_max_install_names",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.sdepaula.PawdFox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PawdFox-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		800EC6922006AB0400705AE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_MODULES_AUTOLINK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VKKMR35VV8;
+				INFOPLIST_FILE = PawdFox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/opt/nss/lib,
+					/usr/local/opt/nspr/lib,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PawdFox",
+				);
+				OTHER_CFLAGS = "-I${LIBPAWDFOX_PATH}/include";
+				OTHER_LDFLAGS = (
+					"${LIBPAWDFOX_PATH}/lib/libpawdfox.a",
+					"-lnss3",
+					"-v",
+					"-L/usr/local/opt/nspr/lib",
+					"-L/usr/local/opt/nss/lib",
+					"-lc++",
+					"-headerpad_max_install_names",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.sdepaula.PawdFox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PawdFox-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		800EC67B2006AB0300705AE2 /* Build configuration list for PBXProject "PawdFox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				800EC68E2006AB0400705AE2 /* Debug */,
+				800EC68F2006AB0400705AE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		800EC6902006AB0400705AE2 /* Build configuration list for PBXNativeTarget "PawdFox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				800EC6912006AB0400705AE2 /* Debug */,
+				800EC6922006AB0400705AE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 800EC6782006AB0300705AE2 /* Project object */;
+}
